@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Cześć, to ja Robert. Pozdrawiam Was serdecznie z Trójmiasta");
 string name = "Ewa";
-char gender = 'f'; // niby mogło by być bool, ale w dzisiejszych czasach stosuje się m/f/d 
+char gender = 'f'; // niby mogłoby być bool, ale w dzisiejszych czasach stosuje się m/f/d 
 int age = 33;
 
 if (gender == 'f' && age < 30)
