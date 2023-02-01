@@ -1,22 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
-// Console.WriteLine("Cześć, to ja Robert. Pozdrawiam Was serdecznie z Trójmiasta");
-string name = "Ewa";
-char gender = 'f'; // niby mogłoby być bool, ale w dzisiejszych czasach stosuje się m/f/d 
-int age = 33;
+int number = 7586267;
+string numberInString = number.ToString();
+char[] letters = numberInString.ToArray();
+Console.WriteLine("Wyniki dla liczby: "+number);
 
-if (gender == 'f' && age < 30)
+// ----- stwórz listę counter zawierającą 10 elementów z ilością powtórzeń kolejnych cyfr
+List<int> counter = new List<int>();
+for (int i = 0; i < 10; i++)
 {
-    Console.WriteLine("Kobieta poniżej 30 lat");
+    counter.Add(0);
 }
-else if (name == "Ewa" && age == 33)
+
+// ----- sprawdź każdy element tablicy letters (char zamień na liczbę)
+// ----- dodaj +1 do odpowiedniego indeksu na liście counter
+for (int dig = 0; dig < letters.Length; dig++)
 {
-    Console.WriteLine("Ewa, lat 33");
+    var whichDig = int.Parse(letters[dig].ToString());
+    counter[whichDig]++;
 }
-else if (gender == 'm' && age < 18)
+
+// ----- przedstaw rozwiązanie zadania, pokazując po kolei elementy listy counter
+var j = 0;
+foreach (var elem in counter)
 {
-    Console.WriteLine("Nieletni Mężczyzna");
-}
-else
-{
-    Console.WriteLine("Jakaś inna Istota");
+    Console.WriteLine(j + " => " + elem);
+    j++;
 }
