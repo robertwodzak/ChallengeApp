@@ -1,15 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-int number = 7586267;
+﻿int number = 7586267;
 string numberInString = number.ToString();
 char[] letters = numberInString.ToArray();
 Console.WriteLine("Wyniki dla liczby: "+number);
 
 // ----- stwórz listę counter zawierającą 10 elementów z ilością powtórzeń kolejnych cyfr
-List<int> counter = new List<int>();
-for (int i = 0; i < 10; i++)
-{
-    counter.Add(0);
-}
+List<int> counter = new List<int>(new int[10]);
 
 // ----- sprawdź każdy element tablicy letters (char zamień na liczbę)
 // ----- dodaj +1 do odpowiedniego indeksu na liście counter
