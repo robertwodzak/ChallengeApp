@@ -25,7 +25,7 @@ foreach (var employee in emplObj)       // ----- Dla każdego z pracowników:
 Console.WriteLine("Zwycięzca to: " + String.Join(", ", winner) + ". \nZdobyte punkty: " + maxScore + ". \nGratulujemy!");
 
 
-// ----- PONIŻSZY FRAGMENT KODU SŁUŻY TYLKO POKAZANIU, jaką sumę punktów zdobył każdy pracownik i można go usunąć
+// ----- PONIŻSZY FRAGMENT KODU SŁUŻY TYLKO POKAZANIU, jaką sumę punktów zdobył każdy pracownik i można go usunąć.
 Console.WriteLine("═════════");
 List<string> allEmployees = new List<string>();
 List<int> allScores = new List<int>();
