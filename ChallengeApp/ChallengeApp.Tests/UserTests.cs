@@ -1,6 +1,6 @@
 namespace ChallengeApp.Tests
 {
-    public class Tests
+    public class UserTests
     {
         [Test]
         public void WhenUserCollectsThreeScores_ShouldReturnCorrectResult() // TEST #1 - tylko dodawane punkty
