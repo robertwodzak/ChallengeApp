@@ -1,9 +1,9 @@
 ﻿namespace ChallengeApp
 {
-    public class Employee
+    public class User
     {
         private List<int> points = new List<int>();
-        public Employee(string name, string surname, int age, int points) // tu jest konstruktor
+        public User(string name, string surname, int age, int points) // tu jest konstruktor
         {
             this.Name = name;
             this.Surname = surname;
@@ -12,14 +12,14 @@
         public string Name { get; private set; } // tu są pola
         public string Surname { get; private set; }
         public int Age { get; private set; }
-        public int Sum
+        public int Result
         {
             get
             {
                 return this.points.Sum();
             }
         }
-        public string emplData
+        public string userData
         {
             get
             {
@@ -28,17 +28,11 @@
         }
         public void AddScore(int number)  // tu są metody
         {
-            this.points.Add(number);
+            this.points.Add(number);            
         }
-        public void AddRandomNotes(int howManyNotes)
+        public void SubtractPenalty(int number)  
         {
-            Random rand = new Random();
-            for (int i = 0; i < howManyNotes; i++)
-            {
-                int points = rand.Next(1, 10);
-                this.AddScore(points);
-            }
+            this.points.Add(-1*number);
         }
-
-    }
+    }   
 }
